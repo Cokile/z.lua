@@ -108,15 +108,9 @@ z -b foo bar # replace foo with bar in cwd and cd there
 
 - Fish Shell (version `2.4.0` or above):
 
-  Create `~/.config/fish/conf.d/z.fish` with following code
+  Use fisher:
 
-      lua /path/to/z.lua --init fish | source
-
-  If you'd like `z.lua` to cooperate with fish's own [directory history](https://fishshell.com/docs/3.2/index.html#id34), you can put
-
-      set -gx _ZL_CD cd
-
-  into the same file.
+      fisher install Cokile/z.lua
 
 - Power Shell:
 
